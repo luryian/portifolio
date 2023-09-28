@@ -1,0 +1,151 @@
+body{
+    background-image: url(./images/paperBK.png);
+    font-family: 'Anonymous Pro', monospace;
+}
+
+.cabecalho{
+    font-family: 'Anonymous Pro';
+    background-color: #DEB893;
+    color: #7E5539;
+    width: 100%;
+    display: inline-flex;
+    height: 50px;
+}
+
+.cabecalhoRight{
+    width: 50%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: large;
+}
+
+h3{
+    display: inline-flex;
+    width: 50%;
+    font-weight: bold;
+    font-size: x-large;
+    padding-left: 5%;
+    align-items: center;
+
+}
+
+.blocoSolido{
+    width: 100%;
+    display: inline-flex;
+    font-family: 'Anonymous Pro';
+    
+}
+
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 60%;
+    height: 625px;
+    color: #EDDFD4;
+    font-size:xx-large;
+}
+
+.btDiv{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.botao{
+    color: #EDDFD4;
+    border: 2px solid #EDDFD4;
+    border-radius: 30px;
+    background-color: transparent;
+    width: 300px;
+    height: 50px;
+    font-size:large;
+}
+
+.botao:hover{
+    color: #7E5539;
+    background-color: #EDDFD4;
+    font-weight: bold;
+}
+
+.rodape_bSolido{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    justify-content: space-between;
+}
+
+a:link {
+    color: transparent;
+ }
+
+.contato{
+    color: #EDDFD4;
+}
+
+.divFoto{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#foto{
+    width: 70%;
+}
+
+.grid_textos{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.textos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Anonymous Pro;
+}
+
+.t_bold{
+    font-family: Roboto Mono;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.tLists{
+    font-weight: bold; 
+    font-size: x-large;
+    padding-bottom: 5%;
+}
+
+.all_list{
+    display: flex;
+    margin-top: 3%;
+    text-align: left;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.list{
+    list-style: disc;
+    margin: 10%;
+    margin-top: 1%;
+    text-align: left;
+}
+
+.listHab{
+    list-style: disc;
+    text-align: center;
+    padding: 10%;
+    padding-top: 5%;
+}
+
+li{
+    font-size: large;
+}
