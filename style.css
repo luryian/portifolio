@@ -53,27 +53,11 @@ h3{
     margin-left: 10%;
 }
 
-.botao{
-    color: #EDDFD4;
-    border: 2px solid #EDDFD4;
-    border-radius: 30px;
-    background-color: transparent;
-    width: 300px;
-    height: 50px;
-    font-size:large;
-}
-
-.botao:hover{
-    color: #7E5539;
-    background-color: #EDDFD4;
-    font-weight: bold;
-}
-
 .rodape_bSolido{
     display: flex;
     align-items: center;
     padding-left: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 2%;
     padding-right: 30px;
     justify-content: space-between;
 }
@@ -89,7 +73,7 @@ a:link {
 .divFoto{
     width: 40%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -110,17 +94,33 @@ a:link {
     align-items: center;
     text-align: center;
     font-family: Anonymous Pro;
+    font-size: x-large;
 }
 
 .t_bold{
     font-family: Roboto Mono;
     font-size: xx-large;
     font-weight: 700;
+    text-align: center;
+    align-items: center;
+    display: contents;
 }
 
-.tLists{
-    font-weight: bold; 
+.qSou{
+    width: 100%;
+    font-family: Roboto Mono;
+    font-size: xx-large;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    padding: 0;
+}
+
+.qSouText{
+    padding: 10%; 
+    padding-top: 2%;
     font-size: x-large;
+    text-align: center;  
     padding-bottom: 5%;
 }
 
@@ -128,24 +128,50 @@ a:link {
     display: flex;
     margin-top: 3%;
     text-align: left;
-    width: 100%;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .list{
     list-style: disc;
-    margin: 10%;
+    margin-right: 15%;
+    margin-left: 28%;
+    margin-bottom: 10%;
     margin-top: 1%;
     text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.listHab{
-    list-style: disc;
+.liTec{
+    width: 50%;
+}
+
+.hab{
+    width: 100%;
+    font-family: Roboto Mono;
+    font-size: xx-large;
+    font-weight: 700;
     text-align: center;
-    padding: 10%;
-    padding-top: 5%;
+    display: block;
+    padding: 0;
+}
+
+
+.listHab{
+    text-align: center;
+    padding: 3%;
+    padding-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.liHab{
+    width: 31%;
+    padding: 1%;
+   
 }
 
 li{
-    font-size: large;
+    font-size: x-large;
 }
