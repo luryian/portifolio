@@ -1,3 +1,13 @@
+:root{
+    --marrom: #7E5539 ;
+    --bege: #EDDFD4 ;
+    --preto: black
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-image: url(./images/paperBK.png);
     font-family: 'Anonymous Pro', monospace;
@@ -5,8 +15,7 @@ body{
 
 .cabecalho{
     font-family: 'Anonymous Pro';
-    background-color: #DEB893;
-    color: #7E5539;
+    color: var(--bege);
     width: 100%;
     display: inline-flex;
     height: 50px;
@@ -20,6 +29,10 @@ body{
     font-size: large;
 }
 
+.navLink{
+    color: var(--bege);
+}
+
 h3{
     display: inline-flex;
     width: 50%;
@@ -27,7 +40,26 @@ h3{
     font-size: x-large;
     padding-left: 5%;
     align-items: center;
+}
 
+.gradiente{
+    height: 100%;
+    background-image: linear-gradient(
+        to top left,
+        var(--preto),
+        var(--marrom)
+    );
+    background-size: 500%, 100%;
+    animation: degrade_animado 4s infinite alternate;
+}
+
+@keyframes degrade_animado {
+    0%{
+        background-position-x: 0% ;
+    }
+    100%{
+        background-position-x: 100% ;
+    }
 }
 
 .blocoSolido{
@@ -44,7 +76,7 @@ h3{
     justify-content: center;
     width: 60%;
     height: 625px;
-    color: #EDDFD4;
+    color: var(--bege);
     font-size:xx-large;
 }
 
@@ -63,11 +95,11 @@ h3{
 }
 
 a:link {
-    color: transparent;
+    text-decoration: none;
  }
 
 .contato{
-    color: #EDDFD4;
+    color: var(--bege);
 }
 
 .divFoto{
@@ -81,47 +113,69 @@ a:link {
     width: 70%;
 }
 
-.grid_textos{
+.textosTec{
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 5%;
+    flex-direction: column;
+    align-items: center;
+    font-family: Anonymous Pro;
+    font-size: x-large;
+    color: white;
+    padding-top: 15%;
+    margin-left: 20%;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
-.textos{
-    width: 50%;
+.textosExp{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     font-family: Anonymous Pro;
     font-size: x-large;
+    color: white;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-bottom: 15%;
+    margin-top:8%;
+    margin-left: 20%;
+    
 }
 
 .t_bold{
     font-family: Roboto Mono;
-    font-size: xx-large;
+    font-size: -webkit-xxx-large;
     font-weight: 700;
     text-align: center;
     align-items: center;
     display: contents;
+    color: var(--marrom);
 }
 
 .qSou{
     width: 100%;
     font-family: Roboto Mono;
-    font-size: xx-large;
+    font-size: -webkit-xxx-large;
     font-weight: 700;
     text-align: center;
     display: block;
     padding: 0;
+    margin-top: 6%;
 }
 
 .qSouText{
     padding: 10%; 
     padding-top: 2%;
-    font-size: x-large;
+    font-size: xx-large;
     text-align: center;  
-    padding-bottom: 5%;
+    padding-bottom: 8%;
+}
+
+.grid_textos{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
 }
 
 .all_list{
@@ -133,45 +187,69 @@ a:link {
 
 .list{
     list-style: disc;
-    margin-right: 15%;
-    margin-left: 28%;
-    margin-bottom: 10%;
-    margin-top: 1%;
-    text-align: left;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    margin-left: 25%;
 }
 
 .liTec{
-    width: 50%;
+    padding-top: 5%;
+}
+
+.habP{
+    grid-column: 2/3;
+    grid-row: 1/4;
+    margin-left: 15%;
+    margin-right: 30%;
+    margin-top: 25%;
 }
 
 .hab{
-    width: 100%;
     font-family: Roboto Mono;
-    font-size: xx-large;
+    font-size: -webkit-xxx-large;
     font-weight: 700;
     text-align: center;
     display: block;
     padding: 0;
+    color: var(--marrom);
+    width: 100%;
 }
 
 
 .listHab{
+    color: white;
     text-align: center;
     padding: 3%;
     padding-top: 2%;
-    display: flex;
-    flex-wrap: wrap;
+    
 }
 
 .liHab{
-    width: 31%;
     padding: 1%;
-   
+    margin-top:5% ;
 }
 
 li{
     font-size: x-large;
+}
+
+
+.projetos{
+    width: 100%;
+    font-family: Roboto Mono;
+    font-size: -webkit-xxx-large;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    padding: 0;
+    margin-top: 5%;
+}
+
+.construcao{
+    margin-top:2%;
+}
+
+.costructText{
+    font-family: Roboto Mono;
+    font-size: x-large;
+    text-align: center;
+    margin-bottom: 6%;
 }
